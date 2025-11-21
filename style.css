@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #1c2a3a;
+}
+
+button {
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+#start-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 16px;
+}
+
+#start-btn:hover {
+    background-color: #26c377;
+}
+
+select {
+    width: 200px;
+    padding: 5px;
+    border-radius: 0.5rem;
+    background-color: #fff;
+}
+
+.set-btn {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background-image: linear-gradient(#9ec14c, #41b14f);
+}
+
+.sets {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(#c0490a,#ed1eed);
+    transform: translateY(-100%);
+    transition: 0.3s ease;
+}
+
+.sets.show {
+    transform: translateY(0);
+}
+
+.container {
+    padding: 20px;
+    color: #fff;
+    position: relative;
+    text-align: center;
+    height: 350px;
+    width: 500px;
+    max-width: 90vw;
+    border-radius: 20px;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.4);
+    background-image: linear-gradient(#f100d1, #ff5616);
+}
+
+h2 {
+    padding: 5px;
+    background-color:purple;
+    border-radius: 100px;
+    margin-bottom: 25px;
+}
+
+input {
+    margin-top: 30px;
+    padding: 12px;
+    width: 300px;
+    border-radius: 25px;
+    font-size: 14px;
+    border: none;
+}
+
+.score {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+}
+
+.timer {
+    position: absolute;
+    top: 70px;
+    left: 20px;
+}
+
+.game-over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: #3b3a3a;
+    border-radius: inherit;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

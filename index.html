@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Typing Speed Test</title>
+</head>
+
+<body>
+
+    <button id="set-btn" class="set-btn">
+        <i class="fas fa-cog"></i>
+    </button>
+
+    <div class="sets" id="sets">
+        <form id="form">
+            <label for="level">Level</label>
+            <select id="level">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Typing Speed Test</h2>
+        <small>Type the word:</small>
+
+        <h1 id="word"></h1>
+
+        <button id="start-btn">Start Test</button>
+
+        <input type="text" id="text" autocomplete="off" placeholder="Start typing..." disabled />
+
+        <p class="timer">Time Left: <span id="time">30</span>s</p>
+
+        <p class="score">Score: <span id="score">0</span></p>
+
+        <div class="game-over" id="game-over"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
